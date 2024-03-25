@@ -11,7 +11,17 @@ export default {
         '96' : '24rem', 
       }
     },
+    spinner:(theme)=>({
+      default: {
+        color: '#f5f8fa',
+        size: '1em',
+        border: '2px',
+        speed: '500ms',
+      },
+    })
   },
-  plugins: [],
+  plugins: [
+      require('tailwindcss-spinner')(),
+  ],
 }
 
